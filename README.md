@@ -3,11 +3,6 @@
 **Dr. Alexander Lozinski**
 
 **December 6, 2024**
-## My Project
-
-I applied machine learning techniques to investigate... Below is my report.
-
-***
 
 ## Introduction 
 
