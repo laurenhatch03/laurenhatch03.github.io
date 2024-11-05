@@ -4,13 +4,14 @@
 
 **December 6, 2024**
 
+For this project, I used machine learning techniques to analyze what variables contribute to University student's sleep patterns.
+
 ## Introduction 
 
-Here is a summary description of the topic. Here is the problem. This is why the problem is important.
+  Many people know the saying, “College is the best years of your life.” While college is important for building relationships and figuring out what you want to do with your life, sleep plays an important role. Sleep is important for college students because it heavily contributes to their overall health and well-being. Many things contribute to how much sleep a student gets. In this report, you will see the different variables that I looked at to try and figure out if there was one that affected sleep the most.
+	By using the “Student Sleep Patterns” dataset on Kaggle, I chose variables that I believed would contribute the most to the amount of sleep. I modeled these variables with a plot to get a visual representation of the data. I then used linear regression to determine the strength of the relationship between each variable. 
 
-There is some dataset that we can use to help solve this problem. This allows a machine learning approach. This is how I will solve the problem using supervised/unsupervised/reinforcement/etc. machine learning.
 
-We did this to solve the problem. We concluded that...
 
 ## Data
 
