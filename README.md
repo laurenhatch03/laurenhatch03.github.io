@@ -1,4 +1,6 @@
-**AOS C111 final project** 
+**Atmospheric and Oceanic Science C111 Final Project** 
+
+Alexander Lozinski
 
 December 6, 2024
 
