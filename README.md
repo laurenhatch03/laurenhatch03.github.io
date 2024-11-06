@@ -15,13 +15,13 @@ By using the “Student Sleep Patterns” dataset on Kaggle, I chose variables t
 
 
 ## Data
+Here is a link directly to the data set I used:  https://www.kaggle.com/datasets/arsalanjamal002/student-sleep-patterns/data
 
-Here is an overview of the dataset, how it was obtained and the preprocessing steps taken, with some plots!
+The dataset includes 500 rows, each representing a different student. With 14 columns, each is a different attribute contributing to sleep-related information. These 14 columns include student id, age, gender, year in school, total hours of sleep per night, average study time, average screen time, average caffeine intake, average exercise time, sleep quality, weekday and weekend sleep start, and weekend and weekday sleep end. The website goes into more detail about each one and how the numbers are inputted into the dataset file. For this project, I decided to use total hours of sleep as my dependent variabel because I want to see what independent variables affect the amount of sleep.
 
-![](assets/IMG/datapenguin.png){: width="500" }
 
-*Figure 1: Here is a caption for my diagram. This one shows a pengiun [1].*
 
+## Preprocessing Steps
 ## Modelling
 
 Here are some more details about the machine learning approach, and why this was deemed appropriate for the dataset. 
