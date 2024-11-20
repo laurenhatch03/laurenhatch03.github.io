@@ -4,7 +4,7 @@
 
 **December 6, 2024**
 
-For this project, I used machine learning techniques to analyze what variables contribute to University student's sleep patterns.
+For this project, I used machine learning techniques to analyze what variables affect sleep patterns for University students.
 
 ## Introduction 
 
