@@ -4,8 +4,7 @@
 
 **December 6, 2024**
 
-For this project, I used machine learning techniques to analyze what variables affect sleep patterns for University students.
-
+For this project, I used machine learning techniques to analyze the factors affecting sleep patterns among University students.
 ## Introduction 
 
 Many people know the saying, “College is the best years of your life.” While college is important for building relationships and figuring out what you want to do with your life, sleep plays an important role in this process. Sleep is important for college students because it heavily contributes to their overall health and well-being. Many things contribute to how much sleep a student gets. In this report, you will see the different variables that I looked at to try and figure out if there was one that affected sleep the most.
