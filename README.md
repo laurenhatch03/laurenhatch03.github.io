@@ -1,4 +1,4 @@
-**A Report on University Student's Sleep Patterns**
+**A Report on Career Change Predictions**
 
 **Atmospheric and Oceanic Science C111 Final Project** 
 
@@ -6,7 +6,7 @@
 
 **December 6, 2024**
 
-For this project, I used machine learning techniques to analyze the factors affecting sleep patterns among University students.
+For this project, I used machine learning techniques to analyze the factors affecting whether an individual wants to change their career.
 ## Introduction 
 
 Many people know the saying, “College is the best years of your life.” While college is important for building relationships and figuring out what you want to do with your life, sleep plays an important role in this process. Sleep is important for college students because it heavily contributes to their overall health and well-being. Many things contribute to how much sleep a student gets. In this report, you will see the different variables that I looked at to try and figure out if there was one that affected sleep the most.
@@ -16,7 +16,7 @@ By using the “Student Sleep Patterns” dataset on Kaggle, I chose variables t
 
 
 ## Data
-[Click here to view the dataset I used!](https://www.kaggle.com/datasets/arsalanjamal002/student-sleep-patterns/data)
+[Click here to view the dataset I used!]([https://www.kaggle.com/datasets/arsalanjamal002/student-sleep-patterns/data](https://www.kaggle.com/datasets/jahnavipaliwal/field-of-study-vs-occupation/data))
 
 The dataset includes 500 rows, each representing a different student. With 14 columns, each is a different attribute contributing to sleep-related information. These 14 columns include student ID, age, gender, year in school, total hours of sleep per night, average study time, average screen time, average caffeine intake, average exercise time, sleep quality, weekday and weekend sleep start, and weekend and weekday sleep end. The website details each one and how the numbers are inputted into the dataset file. For this project, I decided to use total hours of sleep as my dependent variable because I want to see what independent variables affect the amount of sleep.
 
