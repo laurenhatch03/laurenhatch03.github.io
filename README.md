@@ -24,6 +24,10 @@ The dataset includes 38,444 rows, each representing a different person. I narrow
 
 
 ## Preprocessing Steps
+
+The first thing I had to do was narrow the data down by ages. I narrowed it down to ages 20-30 (10,525 rows) to get a better representation of how it affects people closer to me. After that I had to convert the variables that were strings into integers so the data can be graphed. These variables included gender, family influenece, field of study, occupation, education level, and industry growth rate.
+
+
 ## Modelling
 <img width="711" alt="Screenshot 2024-12-03 at 12 53 35 PM" src="https://github.com/user-attachments/assets/e06fab20-4369-420d-ba53-fb16fb1ee045">
 
