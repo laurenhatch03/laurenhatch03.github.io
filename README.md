@@ -17,7 +17,7 @@ Using the “Field of Study vs Occupation” dataset on Kaggle, I looked at vari
 
 
 ## Data
-[Click here to view the dataset I used!]([https://www.kaggle.com/datasets/arsalanjamal002/student-sleep-patterns/data](https://www.kaggle.com/datasets/jahnavipaliwal/field-of-study-vs-occupation/data))
+[Click here to view the dataset I used!](https://www.kaggle.com/datasets/jahnavipaliwal/field-of-study-vs-occupation/data)
 
 The dataset includes 38,444 rows, each representing a different person. I narrowed it down to ages 20-30 (10,525 rows) to see how it affects people closer to me. With 22 columns, each attribute contributes to different information about each person. These 22 columns include their field of study, current occupation, age, gender, years of experience, education level, industry growth rate, job satisfaction, work-life balance, job opportunities, salary, job security, career change interest, skills gap, family influence, mentorship available, certifications, freelancing experience, geographic mobility, professional networks, career change events, technology adoption, and likely to change occupation. The website details each one and how the numbers are inputted into the dataset file. For this project, I used likely to change occupation as my dependent variable to see what independent variables affect that likelihood, and use them for predictions.
 
