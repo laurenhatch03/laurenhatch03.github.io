@@ -25,6 +25,7 @@ The dataset includes 38,444 rows, each representing a different person. I narrow
 
 ## Preprocessing Steps
 ## Modelling
+<img width="711" alt="Screenshot 2024-12-03 at 12 53 35 PM" src="https://github.com/user-attachments/assets/e06fab20-4369-420d-ba53-fb16fb1ee045">
 
 Here are some more details about the machine learning approach, and why this was deemed appropriate for the dataset. 
 
