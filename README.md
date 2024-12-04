@@ -33,7 +33,7 @@ The first thing I had to do was upload the dataset into Google Colab. Next, I no
 
 Below is a snippet of the code where I cleaned up the data.
 
-<!-- <img width="941" alt="cleaning" src="https://github.com/user-attachments/assets/e3d66c80-2056-4ae1-9a6b-6a93cb9ef298"> -->
+<img width="941" alt="cleaning" src="https://github.com/user-attachments/assets/e3d66c80-2056-4ae1-9a6b-6a93cb9ef298"> 
 
 
 Below are the 5 rows that were printed out with data.head(5) that show all variables with integer values.
