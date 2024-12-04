@@ -74,7 +74,7 @@ When looking at age vs. the likelihood to change occupation, no one significantl
 
 <img width="566" alt="figure 4" src="https://github.com/user-attachments/assets/050840dd-4d52-4974-843a-ba6fa3b0fa7c">
 
-*Figure 4: Gender*
+*Figure 4: Occupation Change by Gender*
 
 When looking at gender vs. the likelihood to change occupation, no one significantly stands out. This means that an individual's gender doesn’t directly correlate to changing occupations.
 
