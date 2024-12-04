@@ -32,6 +32,129 @@ Below is a snippet of the code where I cleaned up the data.
 <img width="941" alt="cleaning" src="https://github.com/user-attachments/assets/e3d66c80-2056-4ae1-9a6b-6a93cb9ef298">
 
 
+Below are the 5 rows that were printed out with data.head(5) that show all variables with integer values.
+
+<img width="1261" alt="Screenshot 2024-12-03 at 7 22 32 PM" src="https://github.com/user-attachments/assets/a69a7c6e-0d8e-4aa8-989f-24e8f9795051">
+
+<img width="721" alt="Screenshot 2024-12-03 at 7 23 34 PM" src="https://github.com/user-attachments/assets/fc0af86f-0088-4e75-ba02-e41b9772bea3">
+
+Using data.describe(), I was able to see averages of every variable, they are shown below.
+
+<img width="1235" alt="Screenshot 2024-12-03 at 7 24 47 PM" src="https://github.com/user-attachments/assets/3febe9d6-c0bf-4cc0-8e7a-cc2fd2558e1c">
+
+<img width="1182" alt="Screenshot 2024-12-03 at 7 26 16 PM" src="https://github.com/user-attachments/assets/c96a4736-943a-456b-aedb-5d37ff65e651">
+
+
+Next, I decided to make bar graphs for each variable with ‘Likely to Change Occuptation’ as the dependent variable. Below are the graphs.
+
+
+<img width="566" alt="figure 1" src="https://github.com/user-attachments/assets/48ba93b5-fa68-4772-ac69-ef349a555dd9">
+
+*Figure 1*
+
+
+<img width="566" alt="figure 2" src="https://github.com/user-attachments/assets/10adbf45-904c-4c26-b6fb-07ead31b21cc">
+
+*Figure 2*
+
+
+<img width="566" alt="figure 3" src="https://github.com/user-attachments/assets/12d7ebab-0952-481d-8b4a-a5ae3e8dceaa">
+
+*Figure 3*
+
+
+
+<img width="566" alt="figure 4" src="https://github.com/user-attachments/assets/050840dd-4d52-4974-843a-ba6fa3b0fa7c">
+
+*Figure 4*
+
+
+<img width="567" alt="figure 5" src="https://github.com/user-attachments/assets/4a5919ed-31f7-4b6e-a1ec-7ede7fe5ddf3">
+
+*Figure 5*
+
+
+<img width="561" alt="figure 6" src="https://github.com/user-attachments/assets/57eb8c4d-d504-47bd-a0d1-c1451e531017">
+
+*Figure 6*
+
+
+<img width="566" alt="figure 7" src="https://github.com/user-attachments/assets/c93f087c-72b2-45f7-a4cf-f31e6a00a76f">
+
+*Figure 7*
+
+
+<img width="567" alt="figure 8" src="https://github.com/user-attachments/assets/6298dcf0-2653-46da-9f1d-e3ed86ba4323">
+
+*Figure 8*
+
+
+<img width="566" alt="figure 9" src="https://github.com/user-attachments/assets/374dcefa-d847-4fc9-b406-fd2cebd7de36">
+
+*Figure 9*
+
+
+<img width="565" alt="figure 10" src="https://github.com/user-attachments/assets/6b6e5296-f101-4979-b839-f02b61223e7b">
+
+*Figure 10*
+
+
+<img width="566" alt="figure 11" src="https://github.com/user-attachments/assets/e7858780-aff9-4f70-980f-e65f96bcadc7">
+
+*Figure 11*
+
+
+<img width="565" alt="figure 12" src="https://github.com/user-attachments/assets/be27f588-20ba-4223-90eb-18bc5dedef79">
+
+*Figure 12*
+
+
+<img width="564" alt="figure 13" src="https://github.com/user-attachments/assets/30677a0f-dc1f-428f-ac4b-f8f98a67d5e1">
+
+*Figure 13*
+
+
+<img width="566" alt="figure 14" src="https://github.com/user-attachments/assets/2f89cef1-7c91-4884-9751-464b551c87b0">
+
+*Figure 14*
+
+
+<img width="567" alt="figure 15" src="https://github.com/user-attachments/assets/9a5a995d-4e48-4035-951c-3e4d6956e74b">
+
+*Figure 15*
+
+
+<img width="567" alt="figure 16" src="https://github.com/user-attachments/assets/ab78179e-5522-4eba-9700-4faf4ee35ba0">
+
+*Figure 16*
+
+
+<img width="565" alt="figure 17" src="https://github.com/user-attachments/assets/0b195ffa-4abc-4315-ab90-0e04dc72f2aa">
+
+*Figure 17*
+
+
+<img width="565" alt="figure 18" src="https://github.com/user-attachments/assets/d3738558-c8bf-4eef-9a56-91918f2c3b3f">
+
+*Figure 18*
+
+
+<img width="566" alt="figure 19" src="https://github.com/user-attachments/assets/6c9d80be-421a-4433-8ab6-6b1f4219a583">
+
+*Figure 19*
+
+
+<img width="563" alt="figure 20" src="https://github.com/user-attachments/assets/b789c807-3f46-4c8c-b071-f0bcb6d1fd53">
+
+*Figure 20*
+
+
+<img width="565" alt="figure 21" src="https://github.com/user-attachments/assets/766319d0-bd3a-4f28-bb20-d0cbae1e09e9">
+
+*Figure 21*
+
+
+
 
 ## Modelling
 
