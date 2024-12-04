@@ -185,6 +185,7 @@ To visualize all of the data together I decided to use a correlation matrix, to 
 
 <img width="712" alt="correlation matrix" src="https://github.com/user-attachments/assets/fc89f5c5-fd70-4598-8cdd-8f785783d1c6">
 
+*Figure 22*
 
 ## Modeling
 
@@ -192,6 +193,7 @@ To model the variables I had to prepare the data. I noticed from the preprocessi
 
 <img width="1151" alt="prepare data" src="https://github.com/user-attachments/assets/a4f6a7bf-bc38-4471-bddf-38067b562ec3">
 
+*Figure 23*
 
 I then created models for lasso regression, SVR, decision tree, and logistic regression. I created a lasso regression model it selects the most important features, making the predictions more correct. I created an SVR model because I wanted to minimize the error between the predicted values and actual values. I created a decision tree model to help visualize how the predictions were being made. Finally, I created a logistic regression model because this is a prediction problem and I wanted to find relationships between variables to make the correct predictions. For each model I printed out the root mean squared error. The closer the error it is to 0 the better because the difference between the predicted and actual values is small, meaning the model made good predictions. Then I graphed all 4 models together to see which models were better.
 
@@ -200,12 +202,21 @@ Below is a snippet of the printed out RMSE values:
 
 <img width="424" alt="rmse" src="https://github.com/user-attachments/assets/c5d70a02-d3c8-46d8-8963-ae4ef0346f89">
 
+*Figure 24*
+
 Here is the plot of the REC curves:
 
 <img width="696" alt="curves" src="https://github.com/user-attachments/assets/fdf3ceb5-60c3-4c11-aa3a-a8997443fd0c">
 
+*Figure 25*
 
+Next, I used the logistic regression model to create a correlation matrix to see how well the model predicts outcomes correctly I chose to use the logistic model because logistic regression is a classification technique that is used to predict binary outcomes. In this case it is 0 for no and 1 for yes when answering the question, Is this person likely to change their occupation.
 
+Below is the matrix:
+
+<img width="656" alt="confusion matrix" src="https://github.com/user-attachments/assets/c63ae60a-e79b-4c47-ad8c-1f6bd087b659">
+
+*Figure 26*
 
 ## Results
 
