@@ -156,25 +156,30 @@ Next, I decided to make bar graphs for each variable with ‘Likely to Change Oc
 *Figure 21: Occupation Change by Technology Adoption*
 
 
+To visualize all of the data together I decided to use a correlation matrix, to see if what I saw on the bar graphs was true.
+
+<img width="712" alt="correlation matrix" src="https://github.com/user-attachments/assets/fc89f5c5-fd70-4598-8cdd-8f785783d1c6">
 
 
 ## Modelling
 
+To model the variables I had to prepare the data. I noticed from the preprocessing steps that the 3 variables that contributed the most were ‘Job Satisfaction’, ‘Salary’, and ‘Career Change Interest’ so I created 2 versions of the X_data. One version was with all variables used, and the other version was with just those 3 variables. Next, I split and scaled the data.
 
-Here are some more details about the machine learning approach, and why this was deemed appropriate for the dataset. 
+<img width="1151" alt="prepare data" src="https://github.com/user-attachments/assets/a4f6a7bf-bc38-4471-bddf-38067b562ec3">
 
-The model might involve optimizing some quantity. You can include snippets of code if it is helpful to explain things.
 
-```python
-from sklearn.ensemble import ExtraTreesClassifier
-from sklearn.datasets import make_classification
-X, y = make_classification(n_features=4, random_state=0)
-clf = ExtraTreesClassifier(n_estimators=100, random_state=0)
-clf.fit(X, y)
-clf.predict([[0, 0, 0, 0]])
-```
+I then created models for lasso regression, SVR, decision tree, and logistic regression. I created a lasso regression model it selects the most important features, making the predictions more correct. I created an SVR model because I wanted to minimize the error between the predicted values and actual values. I created a decision tree model to help visualize how the predictions were being made. Finally, I created a logistic regression model because this is a prediction problem and I wanted to find relationships between variables to make the correct predictions. For each model I printed out the root mean squared error. The closer the error it is to 0 the better because the difference between the predicted and actual values is small, meaning the model made good predictions. Then I graphed all 4 models together to see which models were better.
 
-This is how the method was developed.
+
+Below is a snippet of the printed out RMSE values:
+
+<img width="424" alt="rmse" src="https://github.com/user-attachments/assets/c5d70a02-d3c8-46d8-8963-ae4ef0346f89">
+
+Here is the plot of the REC curves:
+
+<img width="694" alt="curves" src="https://github.com/user-attachments/assets/0030683f-f665-4fc7-b8ee-8b362813c078">
+
+
 
 ## Results
 
