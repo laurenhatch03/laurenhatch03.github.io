@@ -170,7 +170,7 @@ When looking at professional networks vs. the likelihood to change occupations, 
 
 <img width="564" alt="figure 20" src="https://github.com/user-attachments/assets/5a46f4f7-529b-42e4-907d-0c476019a7fb">
 
-*Figure 20: Occupation Change by Career Change Interest*
+*Figure 20: Occupation Change by Career Change Events*
 
 When looking at career change events vs. the likelihood to change occupations, no one stands out significantly. This means that the number of career changes an individual has made doesn’t directly correlate to changing occupations.
 
