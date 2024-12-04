@@ -1,3 +1,6 @@
+
+![cover](https://github.com/user-attachments/assets/ffbbb9d6-845b-4d94-be1a-9cab21383e86)
+
 **A Report on Career Change Predictions**
 
 **Atmospheric and Oceanic Science C111 Final Project** 
