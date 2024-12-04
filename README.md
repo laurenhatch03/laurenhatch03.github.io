@@ -1,5 +1,6 @@
 
-![cover](https://github.com/user-attachments/assets/ffbbb9d6-845b-4d94-be1a-9cab21383e86)
+<img width="1395" alt="cover" src="https://github.com/user-attachments/assets/886add33-86f3-4481-8a91-510b7822cae5">
+
 
 **A Report on Career Change Predictions**
 
