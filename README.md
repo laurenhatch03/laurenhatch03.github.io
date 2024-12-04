@@ -181,7 +181,8 @@ Below is a snippet of the printed out RMSE values:
 
 Here is the plot of the REC curves:
 
-<img width="694" alt="curves" src="https://github.com/user-attachments/assets/0030683f-f665-4fc7-b8ee-8b362813c078">
+<img width="696" alt="curves" src="https://github.com/user-attachments/assets/fdf3ceb5-60c3-4c11-aa3a-a8997443fd0c">
+
 
 
 
