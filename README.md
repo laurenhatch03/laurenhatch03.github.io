@@ -165,7 +165,7 @@ To visualize all of the data together I decided to use a correlation matrix, to 
 <img width="712" alt="correlation matrix" src="https://github.com/user-attachments/assets/fc89f5c5-fd70-4598-8cdd-8f785783d1c6">
 
 
-## Modelling
+## Modeling
 
 To model the variables I had to prepare the data. I noticed from the preprocessing steps that the 3 variables that contributed the most were ‘Job Satisfaction’, ‘Salary’, and ‘Career Change Interest’ so I created 2 versions of the X_data. One version was with all variables used, and the other version was with just those 3 variables. Next, I split and scaled the data.
 
