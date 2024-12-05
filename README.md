@@ -303,11 +303,14 @@ Lastly, the feature importance graph (Figure 29) shows and confirms that the onl
 
 ## Conclusion
 
-Here is a brief summary. From this work, the following conclusions can be made:
-* first conclusion
-* second conclusion
+In conclusion, I wanted to find relationships between variables and use machine learning tools and techniques to correctly predict whether an individual is likely to change their occupation. After several different graphs and models were made, the following conclusions were made.
 
-Here is how this work could be developed further in a future project.
+The logistic regression and decision trees were the best models for this project. The logistic regression model achieved a high accuracy with a very small margin of error. Modeling the ROC curve proved this because the logistic regression model could correctly predict the outcome with a 97% probability. The decision tree model was also good at making predictions. While it wasn’t as good as logistic regression, it still performed well. This was shown in the decision tree model. The model found the variables that lead to correct predictions and split them based on values.
+
+Something that could have been improved was using the entire dataset to get a better representation of all ages. The models might or might not have been different. If I had not restricted the ages, maybe more than three variables could have contributed to making correct predictions. Either way, I have found that for people ages 20-30, the variables that influence whether an individual is likely to change their career are job satisfaction, career change interest, and salary.
+
+The conclusions from this project can be applied to future projects. Knowing that logistic regression and decision tree models performed well for this classification problem, it can be expanded. Using a machine with a higher capacity, it could make predictions with larger datasets and take in more variables. Outliers must be filtered out with larger datasets so the data isn’t skewed. Some variables that can be added are marriage status, geographical location, number of children, or stress levels.
+
 
 ## References
 [1] Paliwal, Jahnavi. 2024. “Field Of Study vs Occupation.” Kaggle. https://www.kaggle.com/datasets/jahnavipaliwal/field-of-study-vs-occupation/data.
