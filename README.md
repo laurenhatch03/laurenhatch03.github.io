@@ -202,13 +202,13 @@ Below is a snippet of the printed out RMSE values:
 
 <img width="424" alt="rmse" src="https://github.com/user-attachments/assets/c5d70a02-d3c8-46d8-8963-ae4ef0346f89">
 
-*Figure 24*
+*Figure 24: Root Mean Squared Error Values*
 
 Here is the plot of the REC curves:
 
 <img width="696" alt="curves" src="https://github.com/user-attachments/assets/fdf3ceb5-60c3-4c11-aa3a-a8997443fd0c">
 
-*Figure 25*
+*Figure 25: REC Curves*
 
 Next, I used the logistic regression model to create a correlation matrix to see how well the model predicts outcomes correctly I chose to use the logistic model because logistic regression is a classification technique that is used to predict binary outcomes. In this case it is 0 for no and 1 for yes when answering the question, Is this person likely to change their occupation.
 
@@ -216,7 +216,28 @@ Below is the matrix:
 
 <img width="656" alt="confusion matrix" src="https://github.com/user-attachments/assets/c63ae60a-e79b-4c47-ad8c-1f6bd087b659">
 
-*Figure 26*
+*Figure 26: Confusion Matrix*
+
+Next I created a ROC curve with the logistic regression model to show how well the model performed. The model also shows the area under the curve (labeled AUC). Teh closer this number is to 1 means that the model has an excellent performance and a high ability to correctly classify outcome.
+
+<img width="445" alt="ROC" src="https://github.com/user-attachments/assets/4c48a65a-5ac3-440d-bf5c-36d2f4613d14">
+
+*Figure 27: ROC Curve*
+
+Next, I created a decision tree to help visualize the flowchart that was used to predict outcomes. The tree contains the variables that can correctly predict whether a person is likely to change their occupation.
+
+<img width="573" alt="decision tree" src="https://github.com/user-attachments/assets/ecb7ed67-8ba2-4ef4-9539-0d3384e53cbd">
+
+*Figure 28: Decision Tree*
+
+
+Finally, I created a feature importance graph to show how much each variable contributes to outcome compared to each other.
+
+<img width="626" alt="features" src="https://github.com/user-attachments/assets/4425d17c-bf3b-45ec-9c93-50c8ec2ac444">
+
+*Figure 29: Feature Importances*
+
+
 
 ## Results
 
