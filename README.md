@@ -310,7 +310,7 @@ Here is a brief summary. From this work, the following conclusions can be made:
 Here is how this work could be developed further in a future project.
 
 ## References
-[1] DALL-E 3
+[1] Paliwal, Jahnavi. 2024. “Field Of Study vs Occupation.” Kaggle. https://www.kaggle.com/datasets/jahnavipaliwal/field-of-study-vs-occupation/data.
 
 [back](./)
 
