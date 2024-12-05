@@ -58,128 +58,85 @@ Next, I made bar graphs for each variable with ‘Likely to Change Occupation’
 
 *Figure 1: Occupation Change by Field of Study*
 
-When looking at the fields of study modeled vs. the likelihood to change occupation, no one stands out significantly. This means that an individual's field of study doesn’t directly correlate to changing occupations.
-
 <img width="566" alt="figure 2" src="https://github.com/user-attachments/assets/10adbf45-904c-4c26-b6fb-07ead31b21cc">
 
 *Figure 2: Occupation Change by Current Occupation*
-
-When looking at current occupation vs. likelihood to change occupation, no one significantly stands out. This means that an individual's current occupation doesn’t directly correlate to changing occupations.
 
 <img width="566" alt="figure 3" src="https://github.com/user-attachments/assets/12d7ebab-0952-481d-8b4a-a5ae3e8dceaa">
 
 *Figure 3: Occupation Change by Age*
 
-When looking at age vs. the likelihood to change occupation, no one significantly stands out. This means that an individual's age doesn’t directly correlate to changing occupations.
-
 <img width="566" alt="figure 4" src="https://github.com/user-attachments/assets/050840dd-4d52-4974-843a-ba6fa3b0fa7c">
 
 *Figure 4: Occupation Change by Gender*
-
-When looking at gender vs. the likelihood to change occupation, no one significantly stands out. This means that an individual's gender doesn’t directly correlate to changing occupations.
 
 <img width="567" alt="figure 5" src="https://github.com/user-attachments/assets/4a5919ed-31f7-4b6e-a1ec-7ede7fe5ddf3">
 
 *Figure 5: Occupation Change by Education Level*
 
-When looking at education level vs. likelihood to change occupation, no significant difference stands out. This means that an individual's education level doesn’t directly correlate to changing occupations.
-
 <img width="561" alt="figure 6" src="https://github.com/user-attachments/assets/57eb8c4d-d504-47bd-a0d1-c1451e531017">
 
 *Figure 6: Occupation Change by Industry Growth Rate*
-
-It seems that individuals in industries with a higher growth rate are more likely to change their occupations. Although there is a slight correlation, the differences between low, medium, and high aren't significant enough to differentiate them.
 
 <img width="566" alt="figure 7" src="https://github.com/user-attachments/assets/c93f087c-72b2-45f7-a4cf-f31e6a00a76f">
 
 *Figure 7: Occupation Change by Job Satisfaction*
 
-Individuals who rated their job satisfaction a four or lower on a 1-10 scale are almost certain to change their job satisfaction. This makes sense because if you aren’t enjoying your job, you would want to find a different one.
-
 <img width="567" alt="figure 8" src="https://github.com/user-attachments/assets/6298dcf0-2653-46da-9f1d-e3ed86ba4323">
 
 *Figure 8: Occupation Change by Work-Life Balance*
-
-When looking at work-life balance vs. the likelihood to change occupation, no one significantly stands out. The likelihood of changing occupation values fluctuates, so the rating of an individual's work-life balance on a 1-10 scale doesn’t directly correlate to changing occupations.
 
 <img width="566" alt="figure 9" src="https://github.com/user-attachments/assets/374dcefa-d847-4fc9-b406-fd2cebd7de36">
 
 *Figure 9: Occupation Change by Job Opportunities*
 
-When looking at job opportunities vs. the likelihood to change occupation, no one significantly stands out. This means that an individual's number of job opportunities doesn’t directly correlate to changing occupations.
-
 <img width="565" alt="figure 10" src="https://github.com/user-attachments/assets/6b6e5296-f101-4979-b839-f02b61223e7b">
 
 *Figure 10: Occupation Change by Salary*
-
-The graph shows that individuals who make between $30k and $60k are much more likely to change occupations than those who make more than that.
 
 <img width="566" alt="figure 11" src="https://github.com/user-attachments/assets/e7858780-aff9-4f70-980f-e65f96bcadc7">
 
 *Figure 11: Occupation Change by Job Security*
 
-When looking at job security vs the likelihood to change occupation, there isn’t one that significantly stands out. This means that the rating of an individuals job security, on a 1-10 scale,  doesn’t directly correlate to changing occupations.
-
 <img width="567" alt="figure 12" src="https://github.com/user-attachments/assets/98bc2f7d-dcb2-45e0-a434-8b29ec6c938f">
 
 *Figure 12: Occupation Change by Career Change Interest*
-
-As expected, those interested in changing careers are more likely to change occupations.
 
 <img width="564" alt="figure 13" src="https://github.com/user-attachments/assets/30677a0f-dc1f-428f-ac4b-f8f98a67d5e1">
 
 *Figure 13: Occupation Change by Skills Gap*
 
-When looking at skills gap vs. the likelihood to change occupation, no one stands out significantly. This means that how well an individual's skills match their job requirements, on a 1-10 scale,  doesn’t directly correlate to changing occupations.
-
 <img width="566" alt="figure 14" src="https://github.com/user-attachments/assets/2f89cef1-7c91-4884-9751-464b551c87b0">
 
 *Figure 14: Occupation Change by Family Influence*
-
-When looking at family influence vs. the likelihood to change occupation, no one significantly stands out. This means that the degree of influence an individual's family has on their career choice doesn’t directly correlate to changing occupations.
 
 <img width="563" alt="figure 15" src="https://github.com/user-attachments/assets/b591c4d0-c9ed-4371-8378-66fb7137fd32">
 
 *Figure 15: Occupation Change by Mentorship Available*
 
-When looking at mentorship availability vs. the likelihood to change occupations, no one significantly stands out. This means whether an individual has access to a mentor doesn’t directly correlate to changing occupations.
-
 <img width="566" alt="figure 16" src="https://github.com/user-attachments/assets/72aa1a54-3489-4b50-9445-576cd618c447">
 
 *Figure 16: Occupation Change by Certifications*
-
-When looking at certification vs. the likelihood to change occupation, no one significantly stands out. This means that the number of certifications an individual has doesn’t directly correlate to changing occupations.
 
 <img width="566" alt="figure 17" src="https://github.com/user-attachments/assets/d096b147-eb77-4b01-af65-abe6cd9bb3d6">
 
 *Figure 17: Occupation Change by Freelance Experience*
 
-When looking at freelance experience vs. the likelihood to change occupation, no one significantly stands out. This means that  whether an individual has freelanced doesn’t directly correlate to changing occupations.
-
 <img width="566" alt="figure 18" src="https://github.com/user-attachments/assets/405f9341-00f1-4671-a90f-7738f9cfdbf5">
 
 *Figure 18: Occupation Change by Geographic Mobility*
-
-When looking at geographic mobility vs. the likelihood to change occupation, no one significantly stands out. This means that whether an individual is willing to relocate or not doesn’t directly correlate to changing occupations.
 
 <img width="566" alt="figure 19" src="https://github.com/user-attachments/assets/6c9d80be-421a-4433-8ab6-6b1f4219a583">
 
 *Figure 19: Occupation Change by Professional Networks*
 
-When looking at professional networks vs. the likelihood to change occupations, no one stands out significantly. This means that the measure of how strong an individual's professional network is, on a 1-10 scale, doesn’t directly correlate to changing occupations.
-
 <img width="564" alt="figure 20" src="https://github.com/user-attachments/assets/5a46f4f7-529b-42e4-907d-0c476019a7fb">
 
 *Figure 20: Occupation Change by Career Change Events*
 
-When looking at career change events vs. the likelihood to change occupations, no one stands out significantly. This means that the number of career changes an individual has made doesn’t directly correlate to changing occupations.
-
 <img width="565" alt="figure 21" src="https://github.com/user-attachments/assets/766319d0-bd3a-4f28-bb20-d0cbae1e09e9">
 
 *Figure 21: Occupation Change by Technology Adoption*
-
-When looking at technology adoption vs the likelihood to change occupation, there isn’t one that significantly stands out. This means that the measure of an individuals comfort level with adopting new technologies, on a 1-10 scale, doesn’t directly correlate to changing occupations.
-
 
 To visualize all of the data together I decided to use a correlation matrix, to see if what I saw on the bar graphs was true.
 
@@ -238,10 +195,91 @@ Finally, I created a feature importance graph to show how much each variable con
 *Figure 29: Feature Importances*
 
 
+Results From Preprossesing steps:
+-------------------------
+- In Figure 1, when looking at the fields of study modeled vs. the likelihood to change occupations, no one significantly stands out. This means that an individual's field of study doesn’t directly correlate to changing occupations.
 
-## Results
 
-Figure X shows... [description of Figure X].
+- In Figure 2, when looking at current occupation vs. likelihood to change occupation, no one significantly stands out. This means that an individual's current occupation doesn’t directly correlate to changing occupations.
+
+
+- In Figure 3, when looking at age vs. the likelihood to change occupation, no one significantly stands out. This means that an individual's age doesn’t directly correlate to changing occupations.
+
+
+- In Figure 4, when looking at gender vs. the likelihood to change occupation, no gender significantly stands out. This means that an individual's gender doesn’t directly correlate to changing occupations.
+
+
+- In Figure 5, when looking at education level vs. the likelihood to change occupation, no one significantly stands out. This means that an individual's education level doesn’t directly correlate to changing occupations.
+
+
+- In Figure 6, individuals in an industry with a higher growth rate are more likely to change their occupation. Although there is a slight correlation, the difference between low, medium, and high isn't significant enough to differentiate between them.
+
+
+- In Figure 7, individuals who rated their job satisfaction as four or lower on a 1-10 scale are almost certain to change their job satisfaction. This makes sense because if you aren’t enjoying your job, you want to find a different one.
+
+
+- In Figure 8, no one stands out significantly when comparing work-life balance to the likelihood of changing occupations. The likelihood of changing occupations fluctuates, so an individual's rating of work-life balance on a 1-10 scale doesn’t directly correlate to changing occupations.
+
+
+- In Figure 9, when looking at job opportunities vs. the likelihood to change occupation, no one significantly stands out. This means that an individual's number of job opportunities doesn’t directly correlate to changing occupations.
+
+
+- Figure 10 shows a graph showing that individuals who make between $30k and $60k are much more likely to change occupations than someone who makes more than that.
+
+
+- In Figure 11, no one stands out significantly when looking at job security vs. the likelihood to change occupation. This means that an individual's rating of job security, on a 1-10 scale, doesn’t directly correlate to changing occupations.
+
+
+- In Figure 12, as one can expect, those interested in changing their career are more likely to change occupations.
+
+
+- In Figure 13, the skills gap vs. the likelihood to change occupation doesn’t stand out significantly. This means that how well an individual's skills match their job requirements, on a 1-10 scale, doesn’t directly correlate to changing occupations.
+
+
+- In Figure 14, no one significantly stands out when looking at family influence vs. the likelihood to change occupation. This means that the degree of influence an individual's family has on their career choice doesn’t directly correlate to changing occupations.
+
+
+- In Figure 15, when looking at mentorship availability vs. the likelihood to change occupations, no one significantly stands out. This means that whether an individual has access to a mentor doesn’t directly correlate to changing occupations.
+
+
+- In Figure 16, when looking at certification vs. the likelihood to change occupation, no one significantly stands out. This means that the number of certifications an individual has doesn’t directly correlate to changing occupations.
+
+
+- In Figure 17, when looking at freelance experience vs. the likelihood to change occupation, no one significantly stands out. This means that whether an individual has freelanced doesn’t directly correlate to changing occupations.
+
+
+- In Figure 18, there isn’t much of a difference when looking at geographic mobility vs. the likelihood to change occupation. This means whether an individual is willing to relocate doesn’t directly correlate to changing occupations.
+
+
+- In Figure 19, no one stands out significantly when looking at professional networks vs. the likelihood to change occupation. This means that the measure of how strong an individual's professional network is, on a 1-10 scale, doesn’t directly correlate to changing occupations.
+
+
+- In Figure 20, no one stands out significantly when looking at career change events vs. the likelihood to change occupation. This means that the number of career changes an individual has made doesn’t directly correlate to changing occupations.
+
+
+- In Figure 21, when looking at technology adoption vs. the likelihood to change occupation, no one stands out significantly. This means that the measure of an individual's comfort level with adopting new technologies, on a 1-10 scale, doesn’t directly correlate to changing occupations.
+
+- In Figure 22, the numbers are on a scale from -0.6 to 1.0, with 1.0 being a perfect positive correlation. You can see that the only three variables that correlate with the ‘Likely to Change Occupation’ variable are ‘Job Satisfaction,’ ‘Salary,’ and ‘Career Change Interest.’ 
+
+Results From Modeling:
+-------------
+
+- Figure 23 shows the code I created before I could make the models. The X-data has two options, one with all variables and the other with only the most important three. I split the data and then used StandardScaler( ) because some models need the data to be scaled.
+
+- Figure 24 shows the printed-out RMSE values for each model created.
+
+- Figure 25 shows all four REC curves, each in a different color. Notice how two of the models start at 50 while the other two start at 0.
+
+- Figure 26 shows the confusion matrix where the number of actual and predicted values are color coded.
+
+- Figure 27 shows the ROC curve printed out in blue and the y=x line printed out as a reference, The area under the curve (AUC) is also printed.
+
+- Figure 28 shows the decision tree the model made. It also displays the number of samples and squared error at each node to show how the model made these predictions.
+
+- Figure 29 shows the importance of each feature (variable) in the dataset.
+
+
+
 
 ## Discussion
 
