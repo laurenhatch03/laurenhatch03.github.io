@@ -2,7 +2,7 @@
 <img width="1395" alt="cover" src="https://github.com/user-attachments/assets/886add33-86f3-4481-8a91-510b7822cae5">
 
 
-**A Report on Career Change Predictions**
+**A Report on Occupation Change Predictions**
 
 **Atmospheric and Oceanic Science C111 Final Project** 
 
@@ -10,7 +10,7 @@
 
 **December 6, 2024**
 
-For this project, I used machine learning techniques to analyze the factors affecting whether an individual wants to change their career. I used this to try to predict whether an individual is likely to change their occupation based on those variables.
+For this project, I used machine learning techniques to analyze the features affecting whether an individual wants to change their occupation. I used this to try to predict whether an individual is likely to change their occupation based on those variables.
 ## Introduction 
 
 Many people go to college, get a degree in a field they're interested in, and move on to get a job unrelated to their field of study. The question arises: does your field of study determine your career path? In this report, you will see the different variables that could lead to someone wanting to change their occupation.
