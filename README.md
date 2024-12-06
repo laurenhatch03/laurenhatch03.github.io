@@ -357,7 +357,7 @@ Next, I created receiver-characteristic operator (ROC) curves for the models to 
   
 Next, I graphed the decision trees to help visualize the flowchart used to predict outcomes. The tree contains the variables that can correctly predict whether a person is likely to change their occupation.
 
-<img width="325" alt="tree graph all" src="https://github.com/user-attachments/assets/d077dde5-e79b-4ec4-bb02-479b4cb70897"> <img width="360" alt="tree graph" src="https://github.com/user-attachments/assets/31945812-0d23-4a35-b7fa-89d83c0e19c7">
+<img width="325" alt="tree graph all" src="https://github.com/user-attachments/assets/19f99906-7da6-4512-baba-a8186eebd152"> <img width="360" alt="tree graph" src="https://github.com/user-attachments/assets/31945812-0d23-4a35-b7fa-89d83c0e19c7">
 
 *Figure 38: Decision Tree (All Variables)* & *Figure 39: Decision Tree*
 
