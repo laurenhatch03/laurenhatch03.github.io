@@ -207,7 +207,7 @@ I then created models for decision tree classifier, logistic regression, and ran
 
 ```python
 #decision tree classifier
-tree_model_all = DecisionTreeClassifier(max_depth= best_max_depth_all, random_state=42)
+tree_model_all = DecisionTreeClassifier(max_depth= best_max_depth_all,random_state=42)
 tree_model_all.fit(X_train_all, y_train_all.ravel())
 y_pred_tree_all = tree_model_all.predict(X_test_all)
 rmse_tree_all = np.sqrt(np.mean((y_test_all - y_pred_tree_all)**2))
@@ -221,13 +221,13 @@ print("RMSE for Decision Tree:", rmse_tree)
 print()
 
 #logistic regression
-logistic_all = LogisticRegression(max_iter=2000,penalty='l2', C=1.0, solver='lbfgs', random_state=42)
+logistic_all = LogisticRegression(max_iter=2000,penalty='l2', C=1.0, solver='lbfgs',random_state=42)
 logistic_all.fit(X_train_scaled_all, y_train_all.ravel())
 y_pred_log_all = logistic_all.predict(X_test_scaled_all)
 rmse_log_all = np.sqrt(np.mean((y_test_all - y_pred_log_all)**2))
 print("RMSE for Logistic Regression (all variables):", rmse_log_all)
 
-logistic = LogisticRegression(max_iter=2000,penalty='l2', C=1.0, solver='lbfgs', random_state=42)
+logistic = LogisticRegression(max_iter=2000,penalty='l2', C=1.0, solver='lbfgs',random_state=42)
 logistic.fit(X_train_scaled, y_train.ravel())
 y_pred_log = logistic.predict(X_test_scaled)
 rmse_log = np.sqrt(np.mean((y_test - y_pred_log)**2))
