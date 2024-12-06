@@ -2,7 +2,7 @@
 <img width="1395" alt="cover" src="https://github.com/user-attachments/assets/886add33-86f3-4481-8a91-510b7822cae5">
 
 
-**A Report on Occupation Change Predictions**
+**A Report on Predicting Occupation Changes**
 
 **Atmospheric and Oceanic Science C111 Final Project** 
 
