@@ -365,7 +365,7 @@ Next, I graphed the decision trees to help visualize the flowchart used to predi
 
 Finally, I created used the random forest models to create feature importance graphs to show how much each variable contributes to outcome compared to each other.
 
-<img width="325" alt="feature imprtance all" src="https://github.com/user-attachments/assets/89177eaf-7525-4a54-b3ee-bbb8d30db928"> <img width="325" alt="feature importance" src="https://github.com/user-attachments/assets/412f7898-b6bf-40e8-96bb-5dc7df3bb8bd">
+<img width="340" alt="feature imprtance all" src="https://github.com/user-attachments/assets/89177eaf-7525-4a54-b3ee-bbb8d30db928"> <img width="340" alt="feature importance" src="https://github.com/user-attachments/assets/412f7898-b6bf-40e8-96bb-5dc7df3bb8bd">
 
 *Figure 40: Feature Importances (All Variables)* & *Figure 41: Feature Importances*
 
