@@ -302,6 +302,8 @@ Below is a snippet of the printed out RMSE values:
 
 *Figure 23: Root Mean Squared Error Values*
 
+- Figure 23 shows the printed-out RMSE values for each model created.
+
 Here are the plots of the REC curves for both ```X_data_all``` and ```X_data```:
 
 <img width="335" alt="all rec curves" src="https://github.com/user-attachments/assets/5b367962-1135-483e-a732-8668f91ef00b"> <img width="310" alt="limited REC curves" src="https://github.com/user-attachments/assets/404d5ad7-54fd-49c7-a634-c3e787015616">
@@ -309,6 +311,8 @@ Here are the plots of the REC curves for both ```X_data_all``` and ```X_data```:
 
 *Figure 24: REC Curves (All Variables)* & *Figure 25: REC Curves*
 
+- Figures 24 and 25 show all three REC curves, each in a different color for both ```X_data_all``` and ```X_data```. The lines in figure 24 are almost identical, while the random forest model in figure 25 is slightly off from the others.
+  
 Next, I made correlation matrices to see how well each model correctly predicts outcomes. In this case, the answer to the question, "Is this person likely to change their occupation?" is 0 for no and 1 for yes.
 
 Below are the matrices:
@@ -317,35 +321,47 @@ Below are the matrices:
 
 *Figure 26: Logistic Regression Confusion Matrix (All Variables)* & *Figure 27: Logistic Regression Confusion Matrix*
 
+- Figures 26 and 27 show the confusion matrices for both logistic regression models. A gradient colors the number of actual and predicted values.
+  
 <img width="325" alt="tree all" src="https://github.com/user-attachments/assets/cffd2f7b-4d1e-4ecf-9c37-393e21fa1768"> <img width="325" alt="tree" src="https://github.com/user-attachments/assets/247f3271-9639-4587-96ac-771ae1329ca3">
 
 *Figure 28: Decision Tree Confusion Matrix (All Variables)* & *Figure 29: Decision Tree Confusion Matrix*
 
+- Figures 28 and 29 show the confusion matrices for both decision tree models. A gradient colors the number of actual and predicted values.
+  
 <img width="325" alt="forest all" src="https://github.com/user-attachments/assets/55961c15-c1e6-455c-ae5d-6ceb13aca5dd"> <img width="325" alt="forest" src="https://github.com/user-attachments/assets/276d8599-40f5-44f8-a030-a5b0482e9fa2">
 
 *Figure 30: Random Forest Confusion Matrix (All Variables)* & *Figure 31: Random Forest Confusion Matrix*
 
-
+- Figures 30 and 31 show the confusion matrices for both random forest models. The number of actual and predicted values is colored by a gradient.
+  
 Next, I created receiver-characteristic operator (ROC) curves for the models to show their performance across all thresholds. The model also shows the area under the curve (labeled AUC). The closer this number is to 1, the better the model performs and the better it can correctly classify outcomes. Below are the ROC Curves for all models:
 
 <img width="325" alt="lr roc all" src="https://github.com/user-attachments/assets/8fe98081-f826-4dd1-8f87-dfa8031835fe"> <img width="325" alt="lr roc" src="https://github.com/user-attachments/assets/fd1ff5bc-dc05-4330-9357-0e107f616660">
 
 *Figure 32: Logistic Regression ROC Curve (All Variables)* & *Figure 33: Logistic Regression ROC Curve*
 
+- Figures 32 and 33 show the ROC curves for both logistic regression models. Notice the difference in graphs when only three variables were removed.
+  
 <img width="325" alt="tree roc all" src="https://github.com/user-attachments/assets/04ae62db-88ed-4b62-9b4d-82b19b1d5c71"> <img width="325" alt="tree roc" src="https://github.com/user-attachments/assets/80b6d0c2-6c6e-42fa-8a9a-12e63e2ee608">
 
 *Figure 34: Decision Tree ROC Curve (All Variables)* & *Figure 35: Decision Tree ROC Curve*
 
+- Figures 34 and 35 show the ROC curves for both decision tree models. Again, notice the difference between the two graphs.
+  
 <img width="325" alt="forest roc all" src="https://github.com/user-attachments/assets/6b9f7dbe-687b-42e7-9a5a-a778c33d7997"> <img width="325" alt="forest roc" src="https://github.com/user-attachments/assets/7425702b-303c-430e-a1c3-bb9954f515f8">
 
 *Figure 36: Random Forest ROC Curve (All Variables)* & *Figure 37: Random Forest ROC Curve*
 
+- Figures 36 and 37 show the ROC curves for both random forest models. Notice again the difference in the graphs.
+  
 Next, I graphed the decision trees to help visualize the flowchart used to predict outcomes. The tree contains the variables that can correctly predict whether a person is likely to change their occupation.
 
 <img width="325" alt="tree graph all" src="https://github.com/user-attachments/assets/d077dde5-e79b-4ec4-bb02-479b4cb70897"> <img width="325" alt="tree graph" src="https://github.com/user-attachments/assets/31945812-0d23-4a35-b7fa-89d83c0e19c7">
 
 *Figure 38: Decision Tree (All Variables)* & *Figure 39: Decision Tree*
 
+- Figures 38 and 39 show the decision tree graphs made from the two decision trees. The best ```max_depth``` for each tree was calculated earlier and used for each tree.
 
 Finally, I created used the random forest models to create feature importance graphs to show how much each variable contributes to outcome compared to each other.
 
@@ -353,37 +369,9 @@ Finally, I created used the random forest models to create feature importance gr
 
 *Figure 40: Feature Importances (All Variables)* & *Figure 41: Feature Importances*
 
-
-Results From Preprossesing steps:
--------------------------
-
-Results From Modeling:
--------------
-
-- Figure 23 shows the printed-out RMSE values for each model created.
-
-- Figures 24 and 25 show all three REC curves, each in a different color for both ```X_data_all``` and ```X_data```. The lines in figure 24 are almost identical, while the random forest model in figure 25 is slightly off from the others.
-
-- Figures 26 and 27 show the confusion matrices for both logistic regression models. A gradient colors the number of actual and predicted values.
-
-- Figures 28 and 29 show the confusion matrices for both decision tree models. A gradient colors the number of actual and predicted values.
-
-- Figures 30 and 31 show the confusion matrices for both random forest models. The number of actual and predicted values is colored by a gradient.
-
-- Figures 32 and 33 show the ROC curves for both logistic regression models. Notice the difference in graphs when only three variables were removed.
-
-- Figures 34 and 35 show the ROC curves for both decision tree models. Again, notice the difference between the two graphs.
-
-- Figures 36 and 37 show the ROC curves for both random forest models. Notice again the difference in the graphs.
-
-- Figures 38 and 39 show the decision tree graphs made from the two decision trees. The best ```max_depth``` for each tree was calculated earlier and used for each tree.
-
 - Figures 40 and 41 show the feature importance made from the random forest models. While Figure 41 shows more features with importance, Figure 40 shows features with higher importance values.
-
-
-
-
-## Discussion
+  
+## Results
 
 From the bar graphs (Figures 1-21) alone, you can predict that those who rated their job satisfaction as low, do not make a lot of money, and are interested in changing their career are more likely to change their occupation. The confusion matrix (Figure 22) proves this to be true. While the values along the diagonal are red, because it is a correlation of itself, we want to look at the variables that correlate to ‘Likely to Change Occupation.’ The first variable, ‘Job Satisfaction,’ indicates a -0.60 correlation to ‘Likely to Change Occupation.’ This isn’t a perfect correlation, but it generally means that lower values of job satisfaction correlate to “higher” values of likely to change occupation, and higher values of job satisfaction correlate to “lower” values of likely to change occupation. In this case, 1 is the highest value, corresponding to most likely, and 0 is the lowest value, corresponding to least likely. The next variable with some correlation is ‘Salary.’ With a -0.19 correlation, this isn’t as strong as the last variable, but it is still of some importance. The variable with a positive correlation is ‘Career Change Interest.’ With a value of 0.43, the correlation is almost as strong as the negative correlation that the ‘Job Satisfaction’ variable has. All other variables are less than 0.1, so the correlation might as well be 0.
 
