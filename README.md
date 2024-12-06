@@ -269,30 +269,30 @@ Next, I made correlation matrices to see how well each model correctly predicts 
 
 Below are the matrices:
 
-<img width="225" alt="lr all" src="https://github.com/user-attachments/assets/f8372b8e-7488-4636-8fe3-af49e68e6963"> <img width="225" alt="lr" src="https://github.com/user-attachments/assets/d8c24656-a44c-4466-ab42-09c94d20182e">
+<img width="325" alt="lr all" src="https://github.com/user-attachments/assets/f8372b8e-7488-4636-8fe3-af49e68e6963"> <img width="325" alt="lr" src="https://github.com/user-attachments/assets/d8c24656-a44c-4466-ab42-09c94d20182e">
 
 *Figure 27: Logistic Regression Confusion Matrix (All Variables)* & *Figure 28: Logistic Regression Confusion Matrix*
 
-<img width="225" alt="tree all" src="https://github.com/user-attachments/assets/cffd2f7b-4d1e-4ecf-9c37-393e21fa1768"> <img width="225" alt="tree" src="https://github.com/user-attachments/assets/247f3271-9639-4587-96ac-771ae1329ca3">
+<img width="325" alt="tree all" src="https://github.com/user-attachments/assets/cffd2f7b-4d1e-4ecf-9c37-393e21fa1768"> <img width="325" alt="tree" src="https://github.com/user-attachments/assets/247f3271-9639-4587-96ac-771ae1329ca3">
 
 *Figure 29: Decision Tree Confusion Matrix (All Variables)* & *Figure 30: Decision Tree Confusion Matrix*
 
-<img width="225" alt="forest all" src="https://github.com/user-attachments/assets/55961c15-c1e6-455c-ae5d-6ceb13aca5dd"> <img width="225" alt="forest" src="https://github.com/user-attachments/assets/276d8599-40f5-44f8-a030-a5b0482e9fa2">
+<img width="325" alt="forest all" src="https://github.com/user-attachments/assets/55961c15-c1e6-455c-ae5d-6ceb13aca5dd"> <img width="325" alt="forest" src="https://github.com/user-attachments/assets/276d8599-40f5-44f8-a030-a5b0482e9fa2">
 
 *Figure 31: Random Forest Confusion Matrix (All Variables)* & *Figure 32: Random Forest Confusion Matrix*
 
 
 Next, I created receiver-characteristic operator (ROC) curves for the models to show their performance across all thresholds. The model also shows the area under the curve (labeled AUC). The closer this number is to 1, the better the model performs and the better it can correctly classify outcomes. Below are the ROC Curves for all models:
 
-<img width="250" alt="lr roc all" src="https://github.com/user-attachments/assets/8fe98081-f826-4dd1-8f87-dfa8031835fe"> <img width="250" alt="lr roc" src="https://github.com/user-attachments/assets/fd1ff5bc-dc05-4330-9357-0e107f616660">
+<img width="350" alt="lr roc all" src="https://github.com/user-attachments/assets/8fe98081-f826-4dd1-8f87-dfa8031835fe"> <img width="350" alt="lr roc" src="https://github.com/user-attachments/assets/fd1ff5bc-dc05-4330-9357-0e107f616660">
 
 *Figure 33: Logistic Regression ROC Curve (All Variables)* & *Figure 34: Logistic Regression ROC Curve*
 
-<img width="250" alt="tree roc all" src="https://github.com/user-attachments/assets/04ae62db-88ed-4b62-9b4d-82b19b1d5c71"> <img width="250" alt="tree roc" src="https://github.com/user-attachments/assets/80b6d0c2-6c6e-42fa-8a9a-12e63e2ee608">
+<img width="350" alt="tree roc all" src="https://github.com/user-attachments/assets/04ae62db-88ed-4b62-9b4d-82b19b1d5c71"> <img width="350" alt="tree roc" src="https://github.com/user-attachments/assets/80b6d0c2-6c6e-42fa-8a9a-12e63e2ee608">
 
 *Figure 35: Decision Tree ROC Curve (All Variables)* & *Figure 36: Decision Tree ROC Curve*
 
-<img width="250" alt="forest roc all" src="https://github.com/user-attachments/assets/6b9f7dbe-687b-42e7-9a5a-a778c33d7997"> <img width="250" alt="forest roc" src="https://github.com/user-attachments/assets/7425702b-303c-430e-a1c3-bb9954f515f8">
+<img width="350" alt="forest roc all" src="https://github.com/user-attachments/assets/6b9f7dbe-687b-42e7-9a5a-a778c33d7997"> <img width="350" alt="forest roc" src="https://github.com/user-attachments/assets/7425702b-303c-430e-a1c3-bb9954f515f8">
 
 *Figure 37: Random Forest ROC Curve (All Variables)* & *Figure 38: Random Forest ROC Curve*
 
