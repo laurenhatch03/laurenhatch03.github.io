@@ -185,29 +185,102 @@ y_test_scaled_all = yscaler.transform(y_test_all).ravel()
 y_train_scaled = yscaler.fit_transform(y_train).ravel()
 y_test_scaled = yscaler.transform(y_test).ravel()
 ```
+Then, I ran the following code to help me find the best ```max_depth``` values for the decision tree models:
+``` python
+param_grid = {'max_depth': [2, 3, 4, 5, 6, 7, 8, 9, 10]}
+clf = DecisionTreeClassifier ()
 
-I then created models for lasso regression, SVR, decision tree, and logistic regression. I created a lasso regression model it selects the most important features, making the predictions more correct. I created an SVR model because I wanted to minimize the error between the predicted values and actual values. I created a decision tree model to help visualize how the predictions were being made. Finally, I created a logistic regression model because this is a prediction problem and I wanted to find relationships between variables to make the correct predictions. For each model I printed out the root mean squared error. The closer the error it is to 0 the better because the difference between the predicted and actual values is small, meaning the model made good predictions. Then I graphed all 4 models together to see which models were better.
+grid_search_all = GridSearchCV(clf, param_grid, cv=5, scoring='accuracy')
+grid_search = GridSearchCV(clf, param_grid, cv=5, scoring='accuracy')
+
+grid_search_all. fit(X_train_all, y_train_all)
+grid_search. fit(X_train, y_train)
+
+best_max_depth_all = grid_search_all. best_params_['max_depth']
+best_max_depth = grid_search. best_params_['max_depth']
+
+print("Best max_depth_all:", best_max_depth_all)
+print("Best max_depth:", best_max_depth)
+```
+
+I then created models for decision tree classifier, logistic regression, and random forest classifier. I created a decision tree classifier model because they are used to solve classification problems and can categorize variables based on their learning features. Next, I created a logistic regression model because it allows you to predict binary outcomes based on independent variables. Lastly, I created a random forest classifier model because it can handle larger datasets more efficiently and provides insight to feature importnaces.
+
+```python
+#decision tree classifier
+tree_model_all = DecisionTreeClassifier(max_depth= best_max_depth_all, random_state=42)
+tree_model_all.fit(X_train_all, y_train_all.ravel())
+y_pred_tree_all = tree_model_all.predict(X_test_all)
+rmse_tree_all = np.sqrt(np.mean((y_test_all - y_pred_tree_all)**2))
+print("RMSE for Decision Tree (all variables):", rmse_tree_all)
+
+tree_model = DecisionTreeClassifier(max_depth=best_max_depth, random_state=42)
+tree_model.fit(X_train, y_train.ravel())  
+y_pred_tree = tree_model.predict(X_test)
+rmse_tree = np.sqrt(np.mean((y_test - y_pred_tree)**2))
+print("RMSE for Decision Tree:", rmse_tree)
+print()
+
+#logistic regression
+logistic_all = LogisticRegression(max_iter=2000,penalty='l2', C=1.0, solver='lbfgs', random_state=42)
+logistic_all.fit(X_train_scaled_all, y_train_all.ravel())
+y_pred_log_all = logistic_all.predict(X_test_scaled_all)
+rmse_log_all = np.sqrt(np.mean((y_test_all - y_pred_log_all)**2))
+print("RMSE for Logistic Regression (all variables):", rmse_log_all)
+
+logistic = LogisticRegression(max_iter=2000,penalty='l2', C=1.0, solver='lbfgs', random_state=42)
+logistic.fit(X_train_scaled, y_train.ravel())
+y_pred_log = logistic.predict(X_test_scaled)
+rmse_log = np.sqrt(np.mean((y_test - y_pred_log)**2))
+print("RMSE for Logistic Regression:", rmse_log)
+print()
+
+#random forest classifier
+forest_all = RandomForestClassifier(n_estimators=100, random_state=42)
+forest_all.fit(X_train_all, y_train_all.ravel())
+y_pred_forest_all = forest_all.predict(X_test_all)
+rmse_forest_all = np.sqrt(np.mean((y_test_all - y_pred_forest_all)**2))
+print("RMSE for Random Forest (all variables):", rmse_forest_all)
+
+forest = RandomForestClassifier(n_estimators=100, random_state=42)
+forest.fit(X_train, y_train.ravel())
+y_pred_forest = forest.predict(X_test)
+rmse_forest = np.sqrt(np.mean((y_test - y_pred_forest)**2))
+print("RMSE for Random Forest:", rmse_forest)
+```
+
+For each model I printed out the root mean squared error. The closer the error it is to 0 the better because the difference between the predicted and actual values is small, meaning the model made good predictions. Then I graphed all three models together to see which models were better.
 
 
 Below is a snippet of the printed out RMSE values:
 
-<img width="424" alt="rmse" src="https://github.com/user-attachments/assets/c5d70a02-d3c8-46d8-8963-ae4ef0346f89">
+<img width="552" alt="RMSE" src="https://github.com/user-attachments/assets/e671adff-0b45-4c9c-8bd2-6f7207353b45">
+
 
 *Figure 24: Root Mean Squared Error Values*
 
-Here is the plot of the REC curves:
+Here are the plots of the REC curves for both ```X_data_all``` and ```X_data```:
 
-<img width="696" alt="curves" src="https://github.com/user-attachments/assets/fdf3ceb5-60c3-4c11-aa3a-a8997443fd0c">
+<img width="335" alt="all rec curves" src="https://github.com/user-attachments/assets/5b367962-1135-483e-a732-8668f91ef00b"> <img width="310" alt="limited REC curves" src="https://github.com/user-attachments/assets/404d5ad7-54fd-49c7-a634-c3e787015616">
 
-*Figure 25: REC Curves*
 
-Next, I used the logistic regression model to create a correlation matrix to see how well the model predicts outcomes correctly I chose to use the logistic model because logistic regression is a classification technique that is used to predict binary outcomes. In this case it is 0 for no and 1 for yes when answering the question, Is this person likely to change their occupation.
+*Figure 25: REC Curves (All Variables)* & *Figure 26: REC Curves*
 
-Below is the matrix:
+Next, I made correlation matrices to see how well each model correctly predicts outcomes. In this case, the answer to the question, "Is this person likely to change their occupation?" is 0 for no and 1 for yes.
 
-<img width="656" alt="confusion matrix" src="https://github.com/user-attachments/assets/c63ae60a-e79b-4c47-ad8c-1f6bd087b659">
+Below are the matrices:
 
-*Figure 26: Confusion Matrix*
+<img width="325" alt="lr all" src="https://github.com/user-attachments/assets/f8372b8e-7488-4636-8fe3-af49e68e6963"> <img width="325" alt="lr" src="https://github.com/user-attachments/assets/d8c24656-a44c-4466-ab42-09c94d20182e">
+
+*Figure 27: Logistic Regression Confusion Matrix (All Variables)* & *Figure 28: Logistic Regression Confusion Matrix*
+
+<img width="325" alt="tree all" src="https://github.com/user-attachments/assets/cffd2f7b-4d1e-4ecf-9c37-393e21fa1768"> <img width="325" alt="tree" src="https://github.com/user-attachments/assets/247f3271-9639-4587-96ac-771ae1329ca3">
+
+*Figure 29: Decision Tree Confusion Matric (All Variables)* & *Figure 30: Decision Tree Confusion Matrix*
+
+<img width="325" alt="forest all" src="https://github.com/user-attachments/assets/55961c15-c1e6-455c-ae5d-6ceb13aca5dd"> <img width="325" alt="forest" src="https://github.com/user-attachments/assets/276d8599-40f5-44f8-a030-a5b0482e9fa2">
+
+*Figure 31: Random Forest Confusion Matrix (All Variables)* & *Figure 32: Random Forest Confusion Matrix*
+
 
 Next I created a ROC curve with the logistic regression model to show how well the model performed. The model also shows the area under the curve (labeled AUC). Teh closer this number is to 1 means that the model has an excellent performance and a high ability to correctly classify outcome.
 
