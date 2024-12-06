@@ -256,14 +256,14 @@ Below is a snippet of the printed out RMSE values:
 <img width="552" alt="RMSE" src="https://github.com/user-attachments/assets/e671adff-0b45-4c9c-8bd2-6f7207353b45">
 
 
-*Figure 24: Root Mean Squared Error Values*
+*Figure 23: Root Mean Squared Error Values*
 
 Here are the plots of the REC curves for both ```X_data_all``` and ```X_data```:
 
 <img width="335" alt="all rec curves" src="https://github.com/user-attachments/assets/5b367962-1135-483e-a732-8668f91ef00b"> <img width="310" alt="limited REC curves" src="https://github.com/user-attachments/assets/404d5ad7-54fd-49c7-a634-c3e787015616">
 
 
-*Figure 25: REC Curves (All Variables)* & *Figure 26: REC Curves*
+*Figure 24: REC Curves (All Variables)* & *Figure 25: REC Curves*
 
 Next, I made correlation matrices to see how well each model correctly predicts outcomes. In this case, the answer to the question, "Is this person likely to change their occupation?" is 0 for no and 1 for yes.
 
@@ -271,43 +271,43 @@ Below are the matrices:
 
 <img width="325" alt="lr all" src="https://github.com/user-attachments/assets/f8372b8e-7488-4636-8fe3-af49e68e6963"> <img width="325" alt="lr" src="https://github.com/user-attachments/assets/d8c24656-a44c-4466-ab42-09c94d20182e">
 
-*Figure 27: Logistic Regression Confusion Matrix (All Variables)* & *Figure 28: Logistic Regression Confusion Matrix*
+*Figure 26: Logistic Regression Confusion Matrix (All Variables)* & *Figure 27: Logistic Regression Confusion Matrix*
 
 <img width="325" alt="tree all" src="https://github.com/user-attachments/assets/cffd2f7b-4d1e-4ecf-9c37-393e21fa1768"> <img width="325" alt="tree" src="https://github.com/user-attachments/assets/247f3271-9639-4587-96ac-771ae1329ca3">
 
-*Figure 29: Decision Tree Confusion Matrix (All Variables)* & *Figure 30: Decision Tree Confusion Matrix*
+*Figure 28: Decision Tree Confusion Matrix (All Variables)* & *Figure 29: Decision Tree Confusion Matrix*
 
 <img width="325" alt="forest all" src="https://github.com/user-attachments/assets/55961c15-c1e6-455c-ae5d-6ceb13aca5dd"> <img width="325" alt="forest" src="https://github.com/user-attachments/assets/276d8599-40f5-44f8-a030-a5b0482e9fa2">
 
-*Figure 31: Random Forest Confusion Matrix (All Variables)* & *Figure 32: Random Forest Confusion Matrix*
+*Figure 30: Random Forest Confusion Matrix (All Variables)* & *Figure 31: Random Forest Confusion Matrix*
 
 
 Next, I created receiver-characteristic operator (ROC) curves for the models to show their performance across all thresholds. The model also shows the area under the curve (labeled AUC). The closer this number is to 1, the better the model performs and the better it can correctly classify outcomes. Below are the ROC Curves for all models:
 
 <img width="325" alt="lr roc all" src="https://github.com/user-attachments/assets/8fe98081-f826-4dd1-8f87-dfa8031835fe"> <img width="325" alt="lr roc" src="https://github.com/user-attachments/assets/fd1ff5bc-dc05-4330-9357-0e107f616660">
 
-*Figure 33: Logistic Regression ROC Curve (All Variables)* & *Figure 34: Logistic Regression ROC Curve*
+*Figure 32: Logistic Regression ROC Curve (All Variables)* & *Figure 33: Logistic Regression ROC Curve*
 
 <img width="325" alt="tree roc all" src="https://github.com/user-attachments/assets/04ae62db-88ed-4b62-9b4d-82b19b1d5c71"> <img width="325" alt="tree roc" src="https://github.com/user-attachments/assets/80b6d0c2-6c6e-42fa-8a9a-12e63e2ee608">
 
-*Figure 35: Decision Tree ROC Curve (All Variables)* & *Figure 36: Decision Tree ROC Curve*
+*Figure 34: Decision Tree ROC Curve (All Variables)* & *Figure 35: Decision Tree ROC Curve*
 
 <img width="325" alt="forest roc all" src="https://github.com/user-attachments/assets/6b9f7dbe-687b-42e7-9a5a-a778c33d7997"> <img width="325" alt="forest roc" src="https://github.com/user-attachments/assets/7425702b-303c-430e-a1c3-bb9954f515f8">
 
-*Figure 37: Random Forest ROC Curve (All Variables)* & *Figure 38: Random Forest ROC Curve*
+*Figure 36: Random Forest ROC Curve (All Variables)* & *Figure 37: Random Forest ROC Curve*
 
 Next, I graphed the decision trees to help visualize the flowchart used to predict outcomes. The tree contains the variables that can correctly predict whether a person is likely to change their occupation.
 
 <img width="325" alt="tree graph all" src="https://github.com/user-attachments/assets/d077dde5-e79b-4ec4-bb02-479b4cb70897"> <img width="325" alt="tree graph" src="https://github.com/user-attachments/assets/31945812-0d23-4a35-b7fa-89d83c0e19c7">
 
-*Figure 39: Decision Tree (All Variables)* & *Figure 40: Decision Tree*
+*Figure 38: Decision Tree (All Variables)* & *Figure 39: Decision Tree*
 
 
 Finally, I created used the random forest models to create feature importance graphs to show how much each variable contributes to outcome compared to each other.
 
 <img width="325" alt="feature imprtance all" src="https://github.com/user-attachments/assets/89177eaf-7525-4a54-b3ee-bbb8d30db928"> <img width="325" alt="feature importance" src="https://github.com/user-attachments/assets/412f7898-b6bf-40e8-96bb-5dc7df3bb8bd">
 
-*Figure 42: Feature Importances (All Variables)* & *Figure 43: Feature Importances*
+*Figure 40: Feature Importances (All Variables)* & *Figure 41: Feature Importances*
 
 
 Results From Preprossesing steps:
