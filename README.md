@@ -162,7 +162,7 @@ To visualize all of the data together I decided to use a correlation matrix, to 
 
 <img width="712" alt="correlation matrix" src="https://github.com/user-attachments/assets/fc89f5c5-fd70-4598-8cdd-8f785783d1c6">
 
-*Figure 22*
+*Figure 22: Correlation Matrix*
 
 ## Modeling
 
@@ -379,19 +379,25 @@ Results From Preprossesing steps:
 Results From Modeling:
 -------------
 
-- Figure 23 shows the code I created before I could make the models. The X-data has two options, one with all variables and the other with only the most important three. I split the data and then used StandardScaler( ) because some models need the data to be scaled.
+- Figure 23 shows the printed-out RMSE values for each model created.
 
-- Figure 24 shows the printed-out RMSE values for each model created.
+- Figures 24 and 25 show all three REC curves, each in a different color for both ```X_data_all``` and ```X_data```. The lines in figure 24 are almost identical, while the random forest model in figure 25 is slightly off from the others.
 
-- Figure 25 shows all four REC curves, each in a different color. Notice how two of the models start at 50 while the other two start at 0.
+- Figures 26 and 27 show the confusion matrices for both logistic regression models. A gradient colors the number of actual and predicted values.
 
-- Figure 26 shows the confusion matrix where the number of actual and predicted values are color coded.
+- Figures 28 and 29 show the confusion matrices for both decision tree models. A gradient colors the number of actual and predicted values.
 
-- Figure 27 shows the ROC curve printed out in blue and the y=x line printed out as a reference, The area under the curve (AUC) is also printed.
+- Figures 30 and 31 show the confusion matrices for both random forest models. The number of actual and predicted values is colored by a gradient.
 
-- Figure 28 shows the decision tree the model made. It also displays the number of samples and squared error at each node to show how the model made these predictions.
+- Figures 32 and 33 show the ROC curves for both logistic regression models. Notice the difference in graphs when only three variables were removed.
 
-- Figure 29 shows the importance of each feature (variable) in the dataset.
+- Figures 34 and 35 show the ROC curves for both decision tree models. Again, notice the difference between the two graphs.
+
+- Figures 36 and 37 show the ROC curves for both random forest models. Notice again the difference in the graphs.
+
+- Figures 38 and 39 show the decision tree graphs made from the two decision trees. The best ```max_depth``` for each tree was calculated earlier and used for each tree.
+
+- Figures 40 and 41 show the feature importance made from the random forest models. While Figure 41 shows more features with importance, Figure 40 shows features with higher importance values.
 
 
 
