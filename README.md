@@ -391,7 +391,7 @@ Lastly, Figures 40 and 41 used the random forest models to show the feature impo
 
 ## Conclusion
 
-In conclusion, I wanted to find relationships between variables and use machine learning tools and techniques to correctly predict whether an individual is likely to change their occupation. After several different graphs and models were made, the following conclusions were made.
+In summary, I wanted to find relationships between variables and use machine learning tools and techniques to correctly predict whether an individual is likely to change their occupation. After several different graphs and models were made, the following conclusions were made.
 
 With all variables included, the logistic regression, decision tree, and random forest models achieved high accuracy with a very small margin of error. The models without the three variables proved poor due to the limited relationship between the features and the target variable. This shows that when making a model where a few features are heavily relied on, the other features won't matter. In this case, when looking at the models where all features had similar importance (models without the three), it was very hard to predict the outcome with the remaining features correctly.
 
