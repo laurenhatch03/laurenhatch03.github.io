@@ -58,13 +58,13 @@ data.head(5)
 #checks that all variables are integers
 print(data.dtypes)
 ```
-Below are the five rows that were printed out with ``` data.head(5) ```that show all variables with integer values.
+Below are the five rows that were printed out with ``` data.head(5) ``` that show all variables with integer values.
 
 <img width="1261" alt="Screenshot 2024-12-03 at 7 22 32 PM" src="https://github.com/user-attachments/assets/a69a7c6e-0d8e-4aa8-989f-24e8f9795051">
 
 <img width="721" alt="Screenshot 2024-12-03 at 7 23 34 PM" src="https://github.com/user-attachments/assets/fc0af86f-0088-4e75-ba02-e41b9772bea3">
 
-Using ```data.describe() ```,I was able to see averages of every variable; they are shown below.
+Using ```data.describe() ```, I was able to see averages of every variable; they are shown below.
 
 <img width="1235" alt="Screenshot 2024-12-03 at 7 24 47 PM" src="https://github.com/user-attachments/assets/3febe9d6-c0bf-4cc0-8e7a-cc2fd2558e1c">
 
@@ -210,7 +210,7 @@ To visualize all of the data together I decided to use a correlation matrix, to 
   
 ## Modeling
 
-To model the variables, I had to prepare the data. From the preprocessing steps, I noticed that the three variables that contributed the most were ‘Job Satisfaction,’ ‘Salary,’ and ‘Career Change Interest.’ To accommodate this, I made an X_data_all version that contains all independent variables, and an X_data version with all independent variables, excluding those three. Next, I split and scaled the data.
+To model the variables, I had to prepare the data. From the preprocessing steps, I noticed that the three variables that contributed the most were ‘Job Satisfaction,’ ‘Salary,’ and ‘Career Change Interest.’ To accommodate this, I made an ```X_data_all``` version that contains all independent variables, and an ```X_data``` version with all independent variables, excluding those three. Next, I split and scaled the data.
 
 ```python
 #setting the data for x and y
@@ -292,8 +292,7 @@ rmse_forest = np.sqrt(np.mean((y_test - y_pred_forest)**2))
 print("RMSE for Random Forest:", rmse_forest)
 ```
 
-For each model I printed out the root mean squared error. The closer the error it is to 0 the better because the difference between the predicted and actual values is small, meaning the model made good predictions. Then I graphed all three models together to see which models were better.
-
+For each model I printed out the root mean squared error. The closer the error it is to 0 the better because the difference between the predicted and actual values is small, meaning the model made good predictions. 
 
 Below is a snippet of the printed out RMSE values:
 
@@ -304,6 +303,7 @@ Below is a snippet of the printed out RMSE values:
 
 - Figure 23 shows the printed-out RMSE values for each model created.
 
+Then I graphed all three models together to see which models were better.
 Here are the plots of the REC curves for both ```X_data_all``` and ```X_data```:
 
 <img width="335" alt="all rec curves" src="https://github.com/user-attachments/assets/5b367962-1135-483e-a732-8668f91ef00b"> <img width="310" alt="limited REC curves" src="https://github.com/user-attachments/assets/404d5ad7-54fd-49c7-a634-c3e787015616">
@@ -313,7 +313,7 @@ Here are the plots of the REC curves for both ```X_data_all``` and ```X_data```:
 
 - Figures 24 and 25 show all three REC curves, each in a different color for both ```X_data_all``` and ```X_data```. The lines in figure 24 are almost identical, while the random forest model in figure 25 is slightly off from the others.
   
-Next, I made correlation matrices to see how well each model correctly predicts outcomes. In this case, the answer to the question, "Is this person likely to change their occupation?" is 0 for no and 1 for yes.
+Next, I made correlation matrices to see how well each model correctly predicts outcomes. In binary representation, the answer to the question, "Is this person likely to change their occupation?" is 0 for unlikely and 1 for likely.
 
 Below are the matrices:
 
@@ -323,7 +323,7 @@ Below are the matrices:
 
 - Figures 26 and 27 show the confusion matrices for both logistic regression models. A gradient colors the number of actual and predicted values.
   
-<img width="325" alt="tree all" src="https://github.com/user-attachments/assets/cffd2f7b-4d1e-4ecf-9c37-393e21fa1768"> <img width="325" alt="tree" src="https://github.com/user-attachments/assets/247f3271-9639-4587-96ac-771ae1329ca3">
+<img width="325" alt="tree all" src="https://github.com/user-attachments/assets/cffd2f7b-4d1e-4ecf-9c37-393e21fa1768"> <img width="350" alt="tree" src="https://github.com/user-attachments/assets/247f3271-9639-4587-96ac-771ae1329ca3">
 
 *Figure 28: Decision Tree Confusion Matrix (All Variables)* & *Figure 29: Decision Tree Confusion Matrix*
 
