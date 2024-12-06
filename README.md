@@ -10,12 +10,12 @@
 
 **December 6, 2024**
 
-For this project, I used machine learning techniques to analyze the factors affecting whether an individual wants to change their career.
+For this project, I used machine learning techniques to analyze the factors affecting whether an individual wants to change their career. I used this to try and predict whether an individual is likely to change their occupation based on those variables..
 ## Introduction 
 
 Many people go to college, get a degree in a field they're interested in, and move on to get a job unrelated to their field of study. The question arises: does your field of study determine your career path? In this report, you will see the different variables that could lead to someone wanting to change their occupation.
 
-Using the “Field of Study vs Occupation” dataset on Kaggle, I looked at variables that I believed would contribute to an individual, ages 20-30, wanting to change their occupation. I decided to use supervised learning because I wanted to make predictions based on data patterns between the relationships of variables. I modeled these variables with data plots to get a visual representation of the data. I made a heat correlation map to find the variables that contribute most to wanting to change their career. I then made REC curves for lasso regression, SVR, decision tree, and logistic regression to show how well different models can predict these values. I then made a confusion matrix to visually show how well these models can predict the data. I also made a logistic regression model and showed the ROC curve to go with it. I made a decision tree plot to follow and show what values within variables lead to whether an individual is likely to change their occupation or not. Lastly, to confirm the correct variable was being used, I plotted the feature importance to clearly show which variables contribute the most to these predictions.
+Using the “Field of Study vs Occupation” dataset on Kaggle, I looked at variables that I believed would contribute to an individual, ages 20-30, wanting to change their occupation. I decided to use supervised learning because I wanted to make predictions based on data patterns between the relationships of variables. This is a classification problem, so supervised learning would be the best option. I modeled these variables with bar graphs to get an initial visual representation of the data. Next, I made a correlation matrix to find the variables that contribute most to individuals who are more likely to change occupations. Then, I set, split, and called the data to make my models. I created a decision tree classifier, logistic regression, and random forest classifier models. I then made REC curves for all three models to show how well they can predict outcomes. I then made confusion matrices to show how well these models can predict by summarizing the number of correct and incorrect predictions. I also showed the ROC curves to go with each model. I made decision trees to follow and show what values within variables lead to whether an individual is likely to change their occupation. Lastly, to confirm the correct variable was being used, I plotted the feature importances to show which variables each model claimed to contribute the most to these predictions.
 
 
 
@@ -29,22 +29,49 @@ The dataset includes 38,444 rows, each representing a different person. I narrow
 
 ## Preprocessing Steps
 
-The first thing I had to do was upload the dataset into Google Colab. Next, I noticed the data set was really big so I narrowed it down to ages 20-30 (10,525 rows) to get a better representation of how it affects people closer in age to me. I then checked the data types to make sure I could use them.  After that, I had to convert the variables that were strings into integers so the data could be graphed. These variables included gender, family influence, field of study, occupation, education level, and industry growth rate. Using data.head() I was able to check that all the variables were integers and then proceeded to use data.describe() to look at averages.
+The first thing I had to do was upload the dataset into Google Colab. Next, I noticed the data set was really big so I narrowed it down to ages 20-30 (10,525 rows) to get a better representation of how it affects people closer in age to me. I then checked the data types to make sure I could use them.  After that, I had to convert the variables that were strings into integers so the data could be graphed. These variables included gender, family influence, field of study, occupation, education level, and industry growth rate. Using ```data.head()``` I was able to check that all the variables were integers and then proceeded to use ```data.describe()``` to look at averages.
 
 
 Below is a snippet of the code where I cleaned up the data.
+```python
+#cutting data so it's only ages 20-30
+data['Age'] = pd.to_numeric(data['Age'], errors='coerce')
+data = df[df['Age'] <= 30].copy()
 
-<img width="941" alt="cleaning" src="https://github.com/user-attachments/assets/e3d66c80-2056-4ae1-9a6b-6a93cb9ef298"> 
+#removing years of experience because it doesnt make sense
+data.drop('Years of Experience', axis=1, inplace=True)
 
+#converting strings to ints
+gender_map = { 'Male': 0,  'Female': 1,}
+family_influence_map = { np.nan : 0, 'Low': 1, 'Medium': 2, 'High': 3,} 
+field_of_study_map = {'Education':0, 'Arts':1, 'Business':2, 'Law':3, 'Computer Science':4, 'Biology':5, 
+                     'Mechanical Engineering':6, 'Economics':7,'Medicine':8, 'Psychology':9 }
+occupation_map = {'Biologist':0, 'Doctor':1, 'Software Developer':2, 'Business Analyst':3, 'Economist':4,
+                  'Mechanical Engineer':5, 'Artist':6, 'Psychologist':7, 'Teacher':8, 'Lawyer':9}
+education_map = { 'High School': 0,"Bachelor's": 1, "Master's": 2, 'PhD': 3,}
+industry_map = {'Low': 0, 'Medium': 1, 'High': 2,}
 
-Below are the 5 rows that were printed out with data.head(5) that show all variables with integer values.
+#mapping new variables
+data['Gender'] = data['Gender'].map(gender_map)
+data['Gender'] = data['Gender'].astype(int)
+data['Family Influence'] = data['Family Influence'].map(family_influence_map)
+data['Field of Study'] = data['Field of Study'].map(field_of_study_map)
+data['Current Occupation'] = data['Current Occupation'].map(occupation_map)
+data['Education Level'] = data['Education Level'].map(education_map)
+data['Industry Growth Rate'] = data['Industry Growth Rate'].map(industry_map)
+data.head(5)
+
+#checks that all variables are integers
+print(data.dtypes)
+```
+Below are the 5 rows that were printed out with ``` data.head(5) ```that show all variables with integer values.
 
 <img width="1261" alt="Screenshot 2024-12-03 at 7 22 32 PM" src="https://github.com/user-attachments/assets/a69a7c6e-0d8e-4aa8-989f-24e8f9795051">
 
 <img width="721" alt="Screenshot 2024-12-03 at 7 23 34 PM" src="https://github.com/user-attachments/assets/fc0af86f-0088-4e75-ba02-e41b9772bea3">
 
 
-Using data.describe(), I was able to see averages of every variable; they are shown below.
+Using ```data.describe() ```,I was able to see averages of every variable; they are shown below.
 
 <img width="1235" alt="Screenshot 2024-12-03 at 7 24 47 PM" src="https://github.com/user-attachments/assets/3febe9d6-c0bf-4cc0-8e7a-cc2fd2558e1c">
 
