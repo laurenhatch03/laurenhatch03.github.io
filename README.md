@@ -401,7 +401,7 @@ The conclusions from this project can be applied to future projects. It can be e
 
 
 ## References
-[1] Paliwal, Jahnavi. 2024. “Field Of Study vs Occupation.” Kaggle. https://www.kaggle.com/datasets/jahnavipaliwal/field-of-study-vs-occupation/data.
+[1] Paliwal, Jahnavi. 2024. “Field Of Study vs Occupation.” Kaggle. (https://www.kaggle.com/datasets/jahnavipaliwal/field-of-study-vs-occupation/data.)
 
 
 
