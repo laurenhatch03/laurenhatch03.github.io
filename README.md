@@ -284,30 +284,30 @@ Below are the matrices:
 
 Next, I created receiver-characteristic operator (ROC) curves for the models to show their performance across all thresholds. The model also shows the area under the curve (labeled AUC). The closer this number is to 1, the better the model performs and the better it can correctly classify outcomes. Below are the ROC Curves for all models:
 
-<img width="350" alt="lr roc all" src="https://github.com/user-attachments/assets/8fe98081-f826-4dd1-8f87-dfa8031835fe"> <img width="350" alt="lr roc" src="https://github.com/user-attachments/assets/fd1ff5bc-dc05-4330-9357-0e107f616660">
+<img width="325" alt="lr roc all" src="https://github.com/user-attachments/assets/8fe98081-f826-4dd1-8f87-dfa8031835fe"> <img width="325" alt="lr roc" src="https://github.com/user-attachments/assets/fd1ff5bc-dc05-4330-9357-0e107f616660">
 
 *Figure 33: Logistic Regression ROC Curve (All Variables)* & *Figure 34: Logistic Regression ROC Curve*
 
-<img width="350" alt="tree roc all" src="https://github.com/user-attachments/assets/04ae62db-88ed-4b62-9b4d-82b19b1d5c71"> <img width="350" alt="tree roc" src="https://github.com/user-attachments/assets/80b6d0c2-6c6e-42fa-8a9a-12e63e2ee608">
+<img width="325" alt="tree roc all" src="https://github.com/user-attachments/assets/04ae62db-88ed-4b62-9b4d-82b19b1d5c71"> <img width="325" alt="tree roc" src="https://github.com/user-attachments/assets/80b6d0c2-6c6e-42fa-8a9a-12e63e2ee608">
 
 *Figure 35: Decision Tree ROC Curve (All Variables)* & *Figure 36: Decision Tree ROC Curve*
 
-<img width="350" alt="forest roc all" src="https://github.com/user-attachments/assets/6b9f7dbe-687b-42e7-9a5a-a778c33d7997"> <img width="350" alt="forest roc" src="https://github.com/user-attachments/assets/7425702b-303c-430e-a1c3-bb9954f515f8">
+<img width="325" alt="forest roc all" src="https://github.com/user-attachments/assets/6b9f7dbe-687b-42e7-9a5a-a778c33d7997"> <img width="325" alt="forest roc" src="https://github.com/user-attachments/assets/7425702b-303c-430e-a1c3-bb9954f515f8">
 
 *Figure 37: Random Forest ROC Curve (All Variables)* & *Figure 38: Random Forest ROC Curve*
 
-Next, I created a decision tree to help visualize the flowchart that was used to predict outcomes. The tree contains the variables that can correctly predict whether a person is likely to change their occupation.
+Next, I graphed the decision trees to help visualize the flowchart used to predict outcomes. The tree contains the variables that can correctly predict whether a person is likely to change their occupation.
 
-<img width="573" alt="decision tree" src="https://github.com/user-attachments/assets/ecb7ed67-8ba2-4ef4-9539-0d3384e53cbd">
+<img width="325" alt="tree graph all" src="https://github.com/user-attachments/assets/d077dde5-e79b-4ec4-bb02-479b4cb70897"> <img width="325" alt="tree graph" src="https://github.com/user-attachments/assets/31945812-0d23-4a35-b7fa-89d83c0e19c7">
 
-*Figure 28: Decision Tree*
+*Figure 39: Decision Tree (All Variables)* & *Figure 40: Decision Tree*
 
 
-Finally, I created a feature importance graph to show how much each variable contributes to outcome compared to each other.
+Finally, I created used the random forest models to create feature importance graphs to show how much each variable contributes to outcome compared to each other.
 
-<img width="626" alt="features" src="https://github.com/user-attachments/assets/4425d17c-bf3b-45ec-9c93-50c8ec2ac444">
+<img width="325" alt="feature imprtance all" src="https://github.com/user-attachments/assets/89177eaf-7525-4a54-b3ee-bbb8d30db928"> <img width="325" alt="feature importance" src="https://github.com/user-attachments/assets/412f7898-b6bf-40e8-96bb-5dc7df3bb8bd">
 
-*Figure 29: Feature Importances*
+*Figure 42: Feature Importances (All Variables)* & *Figure 43: Feature Importances*
 
 
 Results From Preprossesing steps:
