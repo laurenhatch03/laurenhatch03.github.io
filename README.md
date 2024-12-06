@@ -357,7 +357,7 @@ Next, I created receiver-characteristic operator (ROC) curves for the models to 
   
 Next, I graphed the decision trees to help visualize the flowchart used to predict outcomes. The tree contains the variables that can correctly predict whether a person is likely to change their occupation.
 
-<img width="325" alt="tree graph all" src="https://github.com/user-attachments/assets/d077dde5-e79b-4ec4-bb02-479b4cb70897"> <img width="325" alt="tree graph" src="https://github.com/user-attachments/assets/31945812-0d23-4a35-b7fa-89d83c0e19c7">
+<img width="325" alt="tree graph all" src="https://github.com/user-attachments/assets/d077dde5-e79b-4ec4-bb02-479b4cb70897"> <img width="360" alt="tree graph" src="https://github.com/user-attachments/assets/31945812-0d23-4a35-b7fa-89d83c0e19c7">
 
 *Figure 38: Decision Tree (All Variables)* & *Figure 39: Decision Tree*
 
@@ -365,7 +365,7 @@ Next, I graphed the decision trees to help visualize the flowchart used to predi
 
 Finally, I created used the random forest models to create feature importance graphs to show how much each variable contributes to outcome compared to each other.
 
-<img width="330" alt="feature imprtance all" src="https://github.com/user-attachments/assets/89177eaf-7525-4a54-b3ee-bbb8d30db928"> <img width="360" alt="feature importance" src="https://github.com/user-attachments/assets/412f7898-b6bf-40e8-96bb-5dc7df3bb8bd">
+<img width="350" alt="feature imprtance all" src="https://github.com/user-attachments/assets/89177eaf-7525-4a54-b3ee-bbb8d30db928"> <img width="360" alt="feature importance" src="https://github.com/user-attachments/assets/412f7898-b6bf-40e8-96bb-5dc7df3bb8bd">
 
 *Figure 40: Feature Importances (All Variables)* & *Figure 41: Feature Importances*
 
