@@ -20,7 +20,7 @@ Using the “Field of Study vs Occupation” dataset on Kaggle, I looked at vari
 ## Data
 [Click here to view the dataset I used!](https://www.kaggle.com/datasets/jahnavipaliwal/field-of-study-vs-occupation/data)
 
-The dataset includes 38,444 rows, each representing a different person. I narrowed it down to ages 20-30 (10,525 rows) to see how it affects people closer to me. With 22 columns, each attribute contributes to different information about each person. These 22 columns include their field of study, current occupation, age, gender, years of experience, education level, industry growth rate, job satisfaction, work-life balance, job opportunities, salary, job security, career change interest, skills gap, family influence, mentorship available, certifications, freelancing experience, geographic mobility, professional networks, career change events, technology adoption, and likely to change occupation. The website details each and how the numbers are inputted into the dataset file. For this project, I used the variable 'Likely to Change Occupation' as my dependent variable to see what independent variables affect that likelihood.
+The dataset includes 38,444 rows, each representing a different person. I narrowed it down to ages 20-30 (10,525 rows) to see how it affects people closer in age to me. With 22 columns, each attribute contributes to different information about each person. These 22 columns include their field of study, current occupation, age, gender, years of experience, education level, industry growth rate, job satisfaction, work-life balance, job opportunities, salary, job security, career change interest, skills gap, family influence, mentorship availability, certifications, freelancing experience, geographic mobility, professional networks, career change events, technology adoption, and likelihood to change occupation. The website details each and how the numbers are inputted into the dataset file. For this project, I used the variable 'Likely to Change Occupation' as my dependent variable to see what independent variables affect that likelihood.
 
 ## Preprocessing Steps
 
@@ -71,7 +71,7 @@ Using ```data.describe() ```, I was able to see averages of every variable; they
 <img width="1182" alt="Screenshot 2024-12-03 at 7 26 16 PM" src="https://github.com/user-attachments/assets/c96a4736-943a-456b-aedb-5d37ff65e651">
 
 
-Next, I made bar graphs for each variable with ‘Likely to Change Occupation’ as the dependent variable. The graphs are shown below:
+Next, I made bar graphs for each variable with the average values of ‘Likely to Change Occupation’ as the dependent variable. The graphs are shown below:
 
 
 <img width="550" alt="figure 1" src="https://github.com/user-attachments/assets/48ba93b5-fa68-4772-ac69-ef349a555dd9">  
